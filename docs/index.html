@@ -1,147 +1,320 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pavimentos | Módulo Académico</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo de Pavimentos</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    background:#f4f6f9;
+    font-family:'Segoe UI',sans-serif;
+}
+
+header{
+    background:linear-gradient(135deg,#0f4c81,#1b75bc);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.container{
+    width:95%;
+    max-width:1600px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:30px;
+}
+
+.block{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.block-header{
+    background:#0f4c81;
+    color:white;
+    padding:20px;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.block-content{
+    padding:20px;
+}
+
+.topic{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.topic:last-child{
+    border-bottom:none;
+}
+
+.topic a{
+    text-decoration:none;
+    color:#0f4c81;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.topic a:hover{
+    color:#f39c12;
+}
+
+.badge{
+    background:#27ae60;
+    color:white;
+    padding:8px 15px;
+    border-radius:25px;
+    font-size:.9rem;
+}
+
+.lock{
+    color:#999;
+    font-size:1.2rem;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.banner{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.banner h2{
+    color:#0f4c81;
+    margin-bottom:10px;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
-  <h1>DISEÑO DE PAVIMENTOS</h1>
-  <p>Ingeniería Civil · Universidad Católica de Cuenca</p>
+
+<h1>DISEÑO DE PAVIMENTOS</h1>
+
+<p>
+Carrera de Ingeniería Civil<br>
+Universidad Católica de Cuenca
+</p>
+
 </header>
 
-<nav>
-  <a href="index.html">Inicio</a>
-  <a href="#bloque1">Bloque 1</a>
-  <a href="#bloque2">Bloque 2</a>
-  <a href="#bloque3">Bloque 3</a>
-</nav>
+<div class="container">
 
-<main class="container">
+<div class="banner">
 
-  <section class="banner">
-    <h2>Aula Virtual de Pavimentos</h2>
-    <p>
-      Este módulo académico organiza los contenidos de la asignatura de Pavimentos
-      por bloques, temas y subtemas, permitiendo activar progresivamente el material
-      de estudio, actividades y recursos de apoyo para los estudiantes.
-    </p>
-  </section>
+<h2>Bienvenido al Aula Virtual de Pavimentos</h2>
 
-  <section class="grid">
+<p>
+Este módulo ha sido desarrollado para complementar el aprendizaje de la asignatura
+de Pavimentos mediante contenidos digitales organizados por bloques temáticos,
+material de consulta, actividades y recursos de apoyo.
+</p>
 
-    <article class="block" id="bloque1">
-      <div class="block-header">
-        BLOQUE 1<br>
-        Introducción, Clasificación y Estructura de los Pavimentos
-      </div>
-      <div class="block-content">
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_1_introduccion.html">1.1 Introducción</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="grid">
 
-        <div class="topic active">
-          <a href="bloque1/1_2_clasificacion_pavimentos.html">1.2 Clasificación de los Pavimentos</a>
-          <span class="badge">Disponible</span>
-        </div>
+<!-- BLOQUE 1 -->
 
-        <div class="topic active">
-          <a href="bloque1/1_3_capas_estructurales.html">1.3 Capas Estructurales de los Pavimentos</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="block">
 
-        <div class="topic active">
-          <a href="bloque1/1_4_fuentes_materiales.html">1.4 Fuentes de Materiales</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="block-header">
+BLOQUE 1<br>
+Introducción, Clasificación y Estructura de los Pavimentos
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_5_compactacion_suelos.html">1.5 Compactación de Suelos, Terraplenes y Materiales Granulares</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="block-content">
 
-        <div class="topic active">
-          <a href="bloque1/1_6_subrasante.html">1.6 Subrasante</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_1introduccion.html">1.1 Introducción</a>
+<span class="badge">Disponible</span>
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_6_1_calicatas.html">1.6.1 Calicatas</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_2_clasificacion_pavimentos.html">
+1.2 Clasificación de los Pavimentos
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_6_2_ensayos.html">1.6.2 Ensayos</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_3_capas_estructurales.html">
+1.3 Capas Estructurales de los Pavimentos
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_6_3_estabilizacion_subrasante.html">1.6.3 Estabilización y Mejoramiento de la Subrasante</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_4_fuentes_materiales.html">
+1.4 Fuentes de Materiales
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_7_subbases.html">1.7 Subbases</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_5_compactacion.html">
+1.5 Compactación de Suelos, Terraplenes y Materiales Granulares
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-        <div class="topic active">
-          <a href="bloque1/1_8_bases.html">1.8 Bases</a>
-          <span class="badge">Disponible</span>
-        </div>
+<div class="topic">
+<a href="bloque_1/1_6_subrasante.html">
+1.6 Subrasante
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-      </div>
-    </article>
+<div class="topic">
+<a href="bloque_1/1_6_1_calicatas.html">
+1.6.1 Calicatas
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-    <article class="block" id="bloque2">
-      <div class="block-header">
-        BLOQUE 2<br>
-        Diseño de Pavimentos
-      </div>
-      <div class="block-content">
-        <div class="topic locked">2.1 Estimación del Tránsito para Pavimentos <span class="lock">🔒</span></div>
-        <div class="topic locked">2.2 Tipología de Cargas <span class="lock">🔒</span></div>
-        <div class="topic locked">2.3 Número de Ejes Equivalentes <span class="lock">🔒</span></div>
-        <div class="topic locked">2.4 Método de Diseño AASHTO 93 <span class="lock">🔒</span></div>
-        <div class="topic locked">2.5 Diseño de Pavimentos Rígidos <span class="lock">🔒</span></div>
-      </div>
-    </article>
+<div class="topic">
+<a href="bloque_1/1_6_2_ensayos.html">
+1.6.2 Ensayos
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-    <article class="block" id="bloque3">
-      <div class="block-header">
-        BLOQUE 3<br>
-        Mezclas Asfálticas y Mantenimiento
-      </div>
-      <div class="block-content">
-        <div class="topic locked">3.1 Mezclas Asfálticas <span class="lock">🔒</span></div>
-        <div class="topic locked">3.1.1 Ensayos en Agregados <span class="lock">🔒</span></div>
-        <div class="topic locked">3.1.2 Ensayos en el Asfalto <span class="lock">🔒</span></div>
-        <div class="topic locked">3.1.3 Ensayos en la Mezcla <span class="lock">🔒</span></div>
-        <div class="topic locked">3.2 Evaluación de Pavimentos <span class="lock">🔒</span></div>
-        <div class="topic locked">3.3 Mantenimiento de Pavimentos <span class="lock">🔒</span></div>
-      </div>
-    </article>
+<div class="topic">
+<a href="bloque_1/1_6_3_estabilizacion.html">
+1.6.3 Estabilización y Mejoramiento de la Subrasante
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-  </section>
+<div class="topic">
+<a href="bloque_1/1_7_subbases.html">
+1.7 Subbases
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-  <section class="info">
-    <h2>Resultado de aprendizaje del Bloque 1</h2>
-    <p>
-      Identificar conceptos básicos, clasificación de pavimentos, capas estructurales,
-      materiales granulares, subrasante, subbases y bases como elementos fundamentales
-      de la estructura de pavimento.
-    </p>
-  </section>
+<div class="topic">
+<a href="bloque_1/1_8_bases.html">
+1.8 Bases
+</a>
+<span class="badge">Disponible</span>
+</div>
 
-</main>
+</div>
+
+</div>
+
+<!-- BLOQUE 2 -->
+
+<div class="block">
+
+<div class="block-header">
+BLOQUE 2<br>
+Diseño de Pavimentos
+</div>
+
+<div class="block-content">
+
+<div class="topic">
+2.1 Estimación del Tránsito para Pavimentos
+<span class="lock">🔒</span>
+</div>
+
+<div class="topic">
+2.2 Tipología de Cargas
+<span class="lock">🔒</span>
+</div>
+
+<div class="topic">
+2.3 Número de Ejes Equivalentes
+<span class="lock">🔒</span>
+</div>
+
+<div class="topic">
+2.4 Método de Diseño AASHTO 93
+<span class="lock">🔒</span>
+</div>
+
+<div class="topic">
+2.5 Diseño de Pavimentos Rígidos
+<span class="lock">🔒</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- BLOQUE 3 -->
+
+<div class="block">
+
+<div class="block-header">
+BLOQUE 3<br>
+Mezclas Asfálticas y Mantenimiento
+</div>
+
+<div class="block-content">
+
+<div class="topic">3.1 Mezclas Asfálticas <span class="lock">🔒</span></div>
+
+<div class="topic">3.1.1 Ensayos en Agregados <span class="lock">🔒</span></div>
+
+<div class="topic">3.1.2 Ensayos en Asfalto <span class="lock">🔒</span></div>
+
+<div class="topic">3.1.3 Ensayos en Mezcla <span class="lock">🔒</span></div>
+
+<div class="topic">3.2 Evaluación de Pavimentos <span class="lock">🔒</span></div>
+
+<div class="topic">3.3 Mantenimiento de Pavimentos <span class="lock">🔒</span></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 <footer>
-  Ing. Ricardo Romero G. · Pavimentos · Ingeniería Civil · UCACUE
+Ingeniería Civil · Pavimentos · Universidad Católica de Cuenca
 </footer>
 
 </body>
